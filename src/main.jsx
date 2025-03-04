@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App.jsx";
 import { createTheme } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
+import './i18n';
+
 
 const theme = createTheme({
   typography: {

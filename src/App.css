@@ -1,18 +1,134 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Global Styles */
+:root {
+  --primary-color: #0a3f9d;
+  --secondary-color: #ffffff;
+  --text-color: #333;
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+
+
+/* Card Styles */
+.card {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  color: var(--secondary-color);
+  margin: 20px auto;
+  font-family: IBM;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.header-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.header-date {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.body-content {
+  text-align: right;
+}
+
+.temp {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.temp-value {
+  font-size: 5rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.temp-unit {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.weather-status {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px 0;
+  text-transform: capitalize;
   text-align: center;
 }
 
-
-/* .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.weather-info {
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 400;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-} */
 
+.info-text {
+  margin: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .card-body {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .weather-icon {
+    font-size: 4rem;
+  }
+
+  .temp-value {
+    font-size: 2.5rem;
+  }
+
+  .temp-unit {
+    font-size: 1.2rem;
+  }
+
+  .weather-status {
+    font-size: 1rem;
+  }
+
+  .weather-info {
+    font-size: 0.9rem;
+  }
+}
 
 
 @font-face {
