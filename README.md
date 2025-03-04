@@ -3,7 +3,7 @@
 
 A simple and multilingual React app that displays the current weather for **Riyadh, Saudi Arabia**, using the [OpenWeatherMap API](https://openweathermap.org/api). The app supports multiple languages thanks to **i18n (internationalization)**.
 
-![App Screenshot](./image.png) <!-- Add a screenshot of your app here -->
+![App Screenshot](image.png)
 
 ## Features ✨
 
